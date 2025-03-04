@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZooWana - Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="styles/output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navigation -->
+    <header>
+        <nav class="bg-customBg shadow-md py-4 px-6 flex justify-between items-center">
+            <div class="text-2xl font-bold text-red-600">ZooWana</div>
+            <div class="space-x-4">
+                <a href="accueil.html" class="text-gray-700 hover:text-red-600">Home</a>
+                <a href="adopt.html" class="text-gray-700 hover:text-red-600">I adopt</a>
+                <a href="paiment.html" class="text-gray-700 hover:text-red-600">Donation</a>
+                <a href="match.html" class="text-gray-700 hover:text-red-600">Form</a>
+                <a href="adoption.html" class="text-gray-700 hover:text-red-600">Details</a>
+                <a href="profil.html" class="text-gray-700 hover:text-red-600">Profile</a>
+                <a href="condition.html" class="text-gray-700 hover:text-red-600">Match</a>
+            </div>
+            <div class="space-x-4">
+                <a href="login.html" class="text-gray-700 font-semibold">Login</a>
+                <a href="contact.html" class="text-gray-700 font-semibold">Mon espace</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    
+    
+    <section class="container mx-auto mt-10 p-6 bg-white rounded-lg shadow-lg">
+        
+        <h2 class="text-xl text-red-600 font-semibold mb-4">SEND A MESSAGE FOR US</h2>
+
+        <form action="#" class="space-y-4">
+            <select class="border border-gray-300 rounded-lg p-2 w-full" name="typeOfSubject">
+                <option value="" disabled selected>Type of Contact</option>
+                <option value="general">General Inquiry</option>
+                <option value="support">Support</option>
+                <option value="adoption">Adoption Inquiry</option>
+                <option value="other">Other</option>
+            </select>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Ajout du champ "Type of Subject" -->
+                
+        
+                <!-- Champs existants -->
+                <input type="text" placeholder="First name" class="border border-gray-300 rounded-lg p-2 mb-4">
+                <input type="text" placeholder="Last name" class="border border-gray-300 rounded-lg p-2 mb-4">
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                <input type="email" placeholder="Email" class="border border-gray-300 rounded-lg p-2 mb-4">
+                <input type="tel" placeholder="Phone number" class="border border-gray-300 rounded-lg p-2 mb-4">
+            </div>
+            
+            <div class="grid grid-cols-1 gap-4">
+                <input type="text" placeholder="Subject" class="border border-gray-300 rounded-lg p-2 w-full">
+                <textarea placeholder="Message" class="border border-gray-300 rounded-lg p-2 w-full"></textarea>
+            </div>
+            
+            <button type="submit" class="bg-red-600 text-white py-2 rounded-lg shadow-md hover:bg-red-700 w-full">
+                Send Message
+            </button>
+        </form>
+        
+    </section>
+
+    <!-- Help Section -->
+    <div class="bg-white p-4 rounded-lg shadow-md max-w-4xl mx-auto mt-6">
+        <h2 class="text-xl font-semibold text-center mb-4 text-red-600">Welcome to ZooWana Help</h2>
+        <p class="text-gray-600 mb-4 text-sm">We are here to answer all your questions and guide you through using our platform.</p>
+    
+        <div class="space-y-4">
+            <div>
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">1. How does ZooWana work?</h3>
+                <p class="text-gray-600 ml-4 text-sm">
+                    ZooWana is a platform designed to:
+                </p>
+                <ul class="list-disc pl-6 text-gray-600 text-sm">
+                    <li>Facilitate the adoption of shelter animals.</li>
+                    <li>Report emergency situations (SOS) involving animals in danger.</li>
+                    <li>Provide detailed information on each animal available for adoption.</li>
+                </ul>
+            </div>
+    
+            <div>
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">2. How to adopt an animal?</h3>
+                <p class="text-gray-600 ml-4 text-sm">Here are the steps to adopt an animal through our platform:</p>
+                <ul class="list-decimal pl-6 text-gray-600 text-sm">
+                    <li>Browse available animals: Go to the homepage and use the filters (type of animal, gender, etc.).</li>
+                    <li>View details: Click on "Details" to learn more about the animal (age, behavior, health, etc.).</li>
+                    <li>Fill out the adoption form: Once you've made your choice, click "Adopt" and complete the required information (name, contact, etc.).</li>
+                    <li>Confirmation: After submitting your request, our team or the shelter will contact you to finalize the adoption.</li>
+                </ul>
+            </div>
+    
+            <div>
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">3. How to report an emergency (SOS)?</h3>
+                <p class="text-gray-600 ml-4 text-sm">
+                    Go to the SOS section. Fill out the form with the necessary information:
+                </p>
+                <ul class="list-decimal pl-6 text-gray-600 text-sm">
+                    <li>Animal's location.</li>
+                    <li>Type of problem (injured animal, abandoned, etc.).</li>
+                    <li>Optionally, add a photo.</li>
+                </ul>
+                <p class="text-gray-600 ml-4 text-sm">Click "Send": We will forward your report to partner organizations or shelters.</p>
+            </div>
+    
+            <div>
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">4. What types of animals are available for adoption?</h3>
+                <p class="text-gray-600 ml-4 text-sm">
+                    Currently, you can adopt:
+                </p>
+                <ul class="list-decimal pl-6 text-gray-600 text-sm">
+                    <li>Dogs.</li>
+                    <li>Cats.</li>
+                    <li>Other animals (depending on availability, such as rabbits, birds).</li>
+                </ul>
+                <p class="text-gray-600 ml-4 text-sm">Use the filters to refine your search.</p>
+            </div>
+        </div>
+    </div>
+        <!-- Adoption Conditions -->
+        <div class="max-w-4xl mx-auto mt-10 p-6  rounded-lg shadow-md text-center">
+            <h3 class="text-xl font-bold text-red-600 mb-4">The adoption conditions</h3>
+            <p class="text-gray-700 mt-2">For any adoption, we require supporting documents to complete the adopter's file: an ID card, an original proof of address dated within the last 3 months, and the certificate of commitment and knowledge of the specific needs of the species, completed and signed 7 days before acquiring the animal.</p>
+            <div class="mt-4 text-red-600 font-semibold">Join the ZooWanna community!</div>
+            <!-- Social Media Icons -->
+            <div class="flex justify-center mt-4 space-x-4 ">
+                <a href="#" class="text-2xl hover:text-blue-600"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-2xl hover:text-red-600"><i class="fab fa-youtube"></i></a>
+                <a href="#" class="text-2xl hover:text-pink-600"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-2xl hover:text-blue-500"><i class="fab fa-x-twitter"></i></a>
+                <a href="#" class="text-2xl hover:text-blue-800"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-2xl hover:text-green-600"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+    
+ 
+   
+        
+    
+
+</body>
+
+</html>

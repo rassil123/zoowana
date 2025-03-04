@@ -1,0 +1,86 @@
+<!DOCTYPE html> 
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZooWana - Adoption & Donation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link href="styles/output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+    <header>
+        <nav class="bg-customBg shadow-md py-4 px-6 flex justify-between items-center">
+            <div class="text-2xl font-bold text-red-600">ZooWana</div>
+            <div class="space-x-4">
+                <a href="accueil.html" class="text-gray-700 hover:text-red-600">Home</a>
+                <a href="adopt.html" class="text-gray-700 hover:text-red-600">I adopt</a>
+                <a href="paiment.html" class="text-gray-700 hover:text-red-600">Donation</a>
+                <a href="match.html" class="text-gray-700 hover:text-red-600">Form</a>
+                <a href="adoption.html" class="text-gray-700 hover:text-red-600">Details</a>
+                <a href="profil.html" class="text-gray-700 hover:text-red-600">Profile</a>
+                <a href="condition.html" class="text-gray-700 hover:text-red-600">Match</a>
+            </div>
+            <div class="space-x-4">
+                <a href="login.html" class="text-gray-700 font-semibold">Login</a>
+                <a href="contact.html" class="text-gray-700 font-semibold">Mon espace</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Donation Section -->
+    <section class="p-8 text-center">
+        <h2 class="text-3xl font-bold text-red-600">Your donation saves animals</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6">
+            <!-- Donation options -->
+            <div class="bg-white p-6 shadow-md rounded-lg border">
+                <p class="font-semibold text-lg">My donation</p>
+                <div class="grid grid-cols-2 gap-4 mt-4">
+                    <button class="bg-stone-100 border px-4 py-2 rounded">Donation for sick animals</button>
+                    <button class="bg-stone-100 border px-4 py-2 rounded">Donation for adopted animals</button>
+                </div>
+                <div class="grid grid-cols-2 gap-4 mt-4">
+                    <button class="bg-stone-100 border px-4 py-2 rounded">10 DT</button>
+                    <button class="bg-stone-100 border px-4 py-2 rounded">30 DT</button>
+                    <button class="bg-stone-100 border px-4 py-2 rounded">150 DT</button>
+                    <button class="bg-stone-100 border px-4 py-2 rounded">80 DT</button>
+                </div>
+                <button class="bg-red-600 text-white px-4 py-2 rounded mt-4">Free Amount</button>
+            </div>
+            <!-- Contact details -->
+            <div class="bg-white p-6 shadow-md rounded-lg border">
+                <h3 class="text-xl font-bold text-red-600">My contact details</h3>
+                <form class="mt-4">
+                    <input type="email" placeholder="Email" class="w-full border px-4 py-2 rounded mb-2">
+                    <input type="text" placeholder="Title" class="w-full border px-4 py-2 rounded mb-2">
+                    <div class="grid grid-cols-2 gap-4">
+                        <input type="text" placeholder="First Name" class="border px-4 py-2 rounded">
+                        <input type="text" placeholder="Last Name" class="border px-4 py-2 rounded">
+                    </div>
+                    <input type="text" placeholder="Address" class="w-full border px-4 py-2 rounded mt-2">
+                    <div class="grid grid-cols-2 gap-4 mt-2">
+                        <input type="text" placeholder="Country" class="border px-4 py-2 rounded">
+                        <input type="text" placeholder="City" class="border px-4 py-2 rounded">
+                    </div>
+                    <div class="flex items-center mt-2">
+                        <span class="bg-red-600 text-white px-2 py-1 rounded-l">📞</span>
+                        <input type="text" placeholder="+216" class="border px-4 py-2 rounded-r w-full">
+                    </div>
+                    <button class="bg-red-600 text-white px-4 py-2 rounded mt-4 w-full">Confirm</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Adoption Conditions -->
+    <section class="p-8 text-center">
+        <h2 class="text-2xl font-bold text-red-600">The adoption conditions</h2>
+        <p class="text-gray-700 mt-2">For any adoption, we require supporting documents to complete the adopter’s file: 
+            an ID card, an original proof of address dated within the last 3 months, and the 
+            certificate of commitment and knowledge of the specific needs of the species, 
+            completed and signed 7 days before acquiring the animal.
+        </p>
+        <p class="text-red-500 font-semibold mt-4">Join the ZooWana community!</p>
+    </section>
+</body>
+</html>

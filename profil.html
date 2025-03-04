@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adopter Profile - ZooWana</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans min-h-screen flex flex-col">
+
+    <header>
+        <nav class="bg-customBg shadow-md py-4 px-6 flex justify-between items-center">
+            <div class="text-2xl font-bold text-red-600">ZooWana</div>
+            <div class="space-x-4">
+                <a href="accueil.html" class="text-gray-700 hover:text-red-600">Home</a>
+                <a href="adopt.html" class="text-gray-700 hover:text-red-600">I adopt</a>
+                <a href="paiment.html" class="text-gray-700 hover:text-red-600">Donation</a>
+                <a href="match.html" class="text-gray-700 hover:text-red-600">Form</a>
+                <a href="adoption.html" class="text-gray-700 hover:text-red-600">Details</a>
+                <a href="profil.html" class="text-gray-700 hover:text-red-600">Profile</a>
+                <a href="condition.html" class="text-gray-700 hover:text-red-600">Match</a>
+            </div>
+            <div class="space-x-4">
+                <a href="login.html" class="text-gray-700 font-semibold">Login</a>
+                <a href="contact.html" class="text-gray-700 font-semibold">Mon espace</a>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <ul id="mobile-menu" class="hidden flex-col space-y-2 p-4 bg-[#F5E7CC] md:hidden text-lg">
+        <li><a href="#" class="block text-gray-700 hover:text-red-600">Home</a></li>
+        <li><a href="#" class="block text-gray-700 hover:text-red-600">Adopt</a></li>
+        <li><a href="#" class="block text-gray-700 hover:text-red-600">Donate</a></li>
+        <li><a href="#" class="block text-gray-700 hover:text-red-600">Match</a></li>
+        <li><a href="#" class="block text-gray-700 hover:text-red-600">Contact</a></li>
+        <li><a href="#" class="block text-gray-700 hover:text-red-600">Login</a></li>
+        <li><a href="#" class="block text-gray-700 hover:text-red-600 font-bold">Mon espace</a></li>
+    </ul>
+
+    <!-- Main Content -->
+    <div class="flex-grow p-8">
+        <!-- Adoption Form -->
+        <h1 class="text-3xl font-bold text-red-600 mt-4">Your Adopter Profile</h1>
+        <p class="text-gray-600 mt-2">Thank you for your willingness to adopt one of our residents!</p>
+        <p class="text-gray-600 mt-2">To guide you as best as possible in your adoption process, we need to learn a little more about you. Completing your adoption profile will help our teams assist you and save time during your visit.</p>
+        <p class="text-gray-600 mt-2">Before any adoption, please ensure you have the Commitment and Knowledge Certificate regarding the specific needs of the species, signed at least 7 days before acquiring your pet.</p>
+
+        <div class="flex flex-col md:flex-row items-start mt-6">
+            <!-- Form -->
+            <form class="w-full md:w-1/2 space-y-4">
+                <div>
+                    <label class="block text-gray-700 font-medium">Title*</label>
+                    <input type="text" name="title" required class="w-full p-2 border border-gray-300 rounded-md">
+                </div>
+
+                <div>
+                    <label class="block text-gray-700 font-medium">First Name*</label>
+                    <input type="text" name="first_name" required class="w-full p-2 border border-gray-300 rounded-md">
+                </div>
+                <div>
+                    <label class="block text-gray-700 font-medium">Last Name*</label>
+                    <input type="text" name="last_name" required class="w-full p-2 border border-gray-300 rounded-md">
+                </div>
+
+                <div>
+                    <label class="block text-gray-700 font-medium">City*</label>
+                    <input type="text" name="city" required class="w-full p-2 border border-gray-300 rounded-md">
+                </div>
+                <div>
+                    <label class="block text-gray-700 font-medium">Postal Code*</label>
+                    <input type="text" name="postal_code" required class="w-full p-2 border border-gray-300 rounded-md">
+                </div>
+
+                <div>
+                    <label class="block text-gray-700 font-medium">Email*</label>
+                    <input type="email" name="email" required class="w-full p-2 border border-gray-300 rounded-md">
+                </div>
+
+                <div>
+                    <label class="block text-gray-700 font-medium">Phone Number*</label>
+                    <input type="tel" name="phone" required class="w-full p-2 border border-gray-300 rounded-md">
+                </div>
+
+                <p class="text-gray-700 font-medium mt-4">Currently owned pets:</p>
+                <div class="space-y-2">
+                    <label class="flex items-center">
+                        <input type="checkbox" name="pets" value="none" class="mr-2"> No pets
+                    </label>
+                    <label class="flex items-center">
+                        <input type="checkbox" name="pets" value="dog" class="mr-2"> A dog
+                    </label>
+                    <label class="flex items-center">
+                        <input type="checkbox" name="pets" value="cat" class="mr-2"> A cat
+                    </label>
+                    <label class="flex items-center">
+                        <input type="checkbox" name="pets" value="other" class="mr-2"> Other pet
+                    </label>
+                </div>
+
+                <!-- Your Experience and Motivations Section -->
+                <div class="mt-6">
+                    <label class="block text-gray-700 font-medium">Your Experience and Motivations</label>
+                    <p class="text-gray-600 mt-2">Why do you want to adopt an animal?</p>
+                    <div class="relative">
+                        <textarea name="motivations" rows="4" class="w-full p-2 border border-gray-300 rounded-md" placeholder="Your Message..."></textarea>
+                        <button type="submit" class="absolute bottom-2 right-2 bg-red-600 text-white px-4 py-2 rounded-md">Send</button>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Image -->
+            <div class="w-full md:w-1/3 flex flex-col items-center mt-6 md:mt-0">
+                <img src="images/dog.jpg" alt="Adopt Me Dog" class="w-96">
+                <p class="text-center text-gray-700 mt-2">Adopt Me Dog</p> <!-- Added text below the image -->
+            </div>
+        </div>
+
+        <!-- Adoption conditions -->
+        <div class="text-center mt-10">
+            <h2 class="text-2xl font-bold text-red-600">Adoption Conditions</h2>
+            <p class="text-gray-600 mt-2">We require supporting documents: ID, proof of address, and a Commitment and Knowledge Certificate.</p>
+        </div>
+
+        <!-- Logos and social media -->
+        <div class="flex justify-center space-x-6 mt-6">
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111392.png" class="w-8"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" class="w-8"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" class="w-8"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" class="w-8"></a>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("menu-btn").addEventListener("click", function() {
+            document.getElementById("mobile-menu").classList.toggle("hidden");
+        });
+    </script>
+
+</body>
+</html>
